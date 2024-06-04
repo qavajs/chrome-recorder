@@ -1,0 +1,21 @@
+{
+  "name": "@qavajs/chrome-recorder",
+  "version": "0.1.0",
+  "description": "Chrome recorder extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "crx": "crx pack extension -o extension.crx"
+  },
+  "keywords": [
+    "QA",
+    "Test Automation"
+  ],
+  "author": "Alexandr Galichenko",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/ui": "^1.6.0",
+    "vitest": "^1.6.0",
+    "crx": "^5.0.1"
+  }
+}

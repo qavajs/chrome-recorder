@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "qavajs Chrome Recorder",
+
+  "description": "qavajs chrome recorder plugin",
+  "icons": {
+    "16": "resources/icon.png",
+    "48": "resources/icon.png",
+    "128": "resources/icon.png"
+  },
+
+  "author": "Alexandr Galichenko",
+  "homepage_url": "https://qavajs.github.io",
+  "offline_enabled": true,
+  "permissions": [],
+  "devtools_page": "plugin.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "minimum_chrome_version": "101"
+}
