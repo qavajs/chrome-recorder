@@ -1,4 +1,4 @@
-import { expect, test as base, vi, beforeEach } from 'vitest';
+import { expect, test as base, vi } from 'vitest';
 vi.stubGlobal('chrome', {
     devtools: {
         recorder: {
@@ -14,7 +14,7 @@ const test = base.extend({
     }
 })
 
-test('navigate', async ({ plugin }) => {
+test('title', async ({ plugin }) => {
     const recording = {
         "title": "Title",
         "steps": []
