@@ -1,4 +1,5 @@
 import { expect, test as base, vi } from 'vitest';
+
 vi.stubGlobal('chrome', {
     devtools: {
         recorder: {
