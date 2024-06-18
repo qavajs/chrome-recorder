@@ -9,15 +9,16 @@ export class RecorderPlugin {
     }
 
     selector(selectors) {
-        return selectors
+        const cssSelectors = selectors
             .map(selector => Array.isArray(selector) ? selector[0] : selector)
             .filter(selector => {
                 return !selector.startsWith('aria') &&
                     !selector.startsWith('xpath') &&
                     !selector.startsWith('pierce') &&
                     !selector.startsWith('text');
-            })[0]
-            .replaceAll(`'`, `"`);
+            });
+        if (cssSelectors.length === 0) return '[Error: CSS Selector is not found. Make sure you enabled CSS checkbox]';
+        return cssSelectors[0].replaceAll(`'`, `"`);
     }
 
     stringify(recording) {
@@ -63,7 +64,7 @@ export class RecorderPlugin {
         return this.script.join('\n');
     }
     async stringifyStep(step) {
-        return 'boba';
+        return 'Not implemented yet';
     }
 }
 

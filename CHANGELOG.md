@@ -10,5 +10,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 :pencil: - chore
 :microscope: - experimental
 
+## [0.1.1]
+- :beetle: added no selector error handler
+
 ## [0.1.0]
 - :rocket: initial implementation
